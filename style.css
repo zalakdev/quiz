@@ -1,0 +1,138 @@
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    padding-top: 60px;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: #333B65;
+    color: #333;
+  }
+  
+* {
+  box-sizing: border-box;
+}
+
+  h1 {
+    margin-bottom: 45px;
+  }
+  #quiz-app {
+    width: 90%;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 20px;  
+    border-radius: 10px;    
+  }
+  
+  #question-container {
+    margin-bottom: 20px;    
+    background: #00000059;
+    padding: 44px 70px 50px;
+    border-radius: 24px;
+  }
+  
+  #question {
+    font-size: 24px;
+    margin-bottom: 28px;
+  }
+  
+  .btn-grid {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+  }
+  
+  .button {    
+    padding: 10px 15px;
+    background-color: #fff;
+    color: #020A32;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .button:hover {
+    background-color: #FFC90B;
+  }
+  
+  #controls {
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  #controls.show {
+    display: flex;
+  }
+  
+  #start-btn, #next-btn {
+    padding: 11px 35px;
+    font-size: 17px;
+    letter-spacing: 1px;
+    background-color: #FFC90B;
+    color: #020A32;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  
+  #start-btn:hover, #next-btn:hover {
+    background-color: #fff;
+  }
+  
+  .hide {
+    display: none;
+  }
+  
+  .correct {
+    background-color: #28a745; /* Green color for correct answers */
+    color: white;
+    pointer-events: none;
+  }
+  
+  .wrong {
+    background-color: #dc3545; /* Red color for incorrect answers */
+    color: white;
+    pointer-events: none;
+  }
+
+  .results:not(.hide) {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+    gap: 8px;
+  }
+
+  #results p{
+    color: #FFC90B;
+    font-size: 21px;
+  }
+
+  .correctans {
+    background: #0000004a;
+    font-size: 14px;
+    padding: 30px 50px;
+    border-radius: 17px;
+    margin-top: 28px;
+}
+
+#results .correctans p {
+    font-size: 15px;
+    margin: -8px 0px 22px;
+}
+
+.correctans h3:first-child {
+    text-align: center;
+}
+
+.resultdeclare {
+  width: 100%;
+  text-align: center;
+  background: #0000002e;
+  padding: 19px 30px 50px;
+  border-radius: 17px;
+}

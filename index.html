@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Quiz App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="quiz-app">
+      <h1 style="text-align: center;"><img src="logo.png" alt="logo" width="185"/></h1>
+      <div id="question-container">
+          <div id="question" style="color: #fff;text-align: center;">Click below to start</div>
+          <div id="answer-buttons" class="btn-grid">
+              <!-- Answer buttons will be added here dynamically -->
+          </div>
+      </div>
+      <div id="controls" style="text-align: center;">
+          <button id="start-btn">Start</button>
+          <button id="next-btn">Next</button>
+      </div>
+      <div id="results">
+          <!-- Results will be shown here -->
+      </div>
+      <audio id="my_audio" src="quiz.mp3" loop="loop"></audio>
+  </div>
+  <script src="custom.js"></script>
+</body>
+</html>
